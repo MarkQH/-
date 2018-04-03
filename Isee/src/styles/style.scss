@@ -1,0 +1,50 @@
+/* 背景色 */
+$primary-color: #1c2635;
+
+.inb{
+  display: inline-block;
+}
+
+@mixin content-padding(){
+  padding: 30rpx 40rpx;
+}
+/* 横向等分 */
+@mixin Lateral-uniform(){
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+/* 更多icon */
+@mixin more-tip(){
+  width: 60rpx;
+  height: 60rpx;
+}
+/* 垂直居中 */
+@mixin vertical-center($value){
+  height: $value;
+  line-height: $value;
+}
+
+@mixin t-ellipsis(){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin c-ellipsis(){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+@mixin mask(){
+  z-index: 1000;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 3000rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
