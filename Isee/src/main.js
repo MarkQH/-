@@ -9,6 +9,8 @@ const app = new Vue({
   store,
   ...App
 })
+
+
 app.$mount()
 export default {
   // 这个字段走 app.json
